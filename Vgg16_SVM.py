@@ -124,7 +124,7 @@ prediction_svm = svm_model.predict(X_test_features)
 #Inverse le transform to get original label back. 
 prediction_svm = le.inverse_transform(prediction_svm)
 
-
+'''
 #Naive Bayes
 
 from sklearn.naive_bayes import GaussianNB
@@ -154,7 +154,7 @@ svm_opt(train_data, train_label, test_data, test_label,
   coef0_range = c(10^(-1), 10^1), init_points = 4, n_iter = 10,
   acq = "ei", kappa = 2.576, eps = 0, optkernel = list(type =
   "exponential", power = 2))
-
+'''
 
 #Print overall accuracy
 from sklearn import metrics
@@ -166,11 +166,11 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(test_labels, prediction_svm)
 print(cm)
 sns.heatmap(cm, annot=True)
-
+'''
 # outcome values order in sklearn
 tp, fn, fp, tn = confusion_matrix(test_labels,prediction_svm,labels=[1,0])
 print('Outcome values : \n', tp, fn, fp, tn)
-
+'''
 # classification report for precision, recall f1-score and accuracy
 matrix = classification_report(test_labels,prediction_svm,labels=[1,0])
 print('Classification report : \n',matrix)
