@@ -18,5 +18,5 @@ However, before CNNs started to dominate, Support Vector Machines (SVMs) were th
 
 So, we have used SVM as the final layer for Classification.
 
-![image](https://user-images.githubusercontent.com/56121394/125592139-2bb980ef-192c-44b8-8dc8-0db9e1f96a13.png)
+
 
